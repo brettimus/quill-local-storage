@@ -1,0 +1,24 @@
+{
+  "name": "quill-local-storage",
+  "version": "0.1.0",
+  "description": "a module for saving drafts in local storage",
+  "main": "quill-local-storage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brettimus/quill-local-storage.git"
+  },
+  "keywords": [
+    "quill",
+    "quilljs",
+    "localstorage"
+  ],
+  "author": "boots <brbeut@gmail.com> (http://brettim.us/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brettimus/quill-local-storage/issues"
+  },
+  "homepage": "https://github.com/brettimus/quill-local-storage#readme"
+}
