@@ -42,7 +42,16 @@ QuillLocalStorage.prototype.textHandler = function textHandler(_delta, _source) 
             timestamp: (new Date()),
             data: this.quill.getHTML(),
         };
-    if (placeholder && !placeholder.isEmpty()) {
+    if (placeholder) {
+
+        if (!placeholder.isEmpty()) {
+            localStorage.setItem(this.key, JSON.stringify(toStore));
+        }
+        else if (this.quill.getText() === "\n") {
+            this.clear();
+        }
+    }
+    else {
         localStorage.setItem(this.key, JSON.stringify(toStore));
     }
 };
